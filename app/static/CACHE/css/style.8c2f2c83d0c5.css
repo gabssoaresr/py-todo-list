@@ -1,0 +1,4 @@
+/* line 2, static/css/style.scss */
+.gray-border li {
+  border: 0.5px solid rgba(105, 100, 105, 0.5);
+  margin: 0 !important; }

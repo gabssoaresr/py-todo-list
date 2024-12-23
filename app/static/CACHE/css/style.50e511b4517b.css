@@ -1,0 +1,97 @@
+/* line 2, static/css/style.scss */
+.gray-border {
+  border: 0.3px solid rgba(105, 100, 105, 0.2);
+  border-radius: 3.5px; }
+  /* line 5, static/css/style.scss */
+  .gray-border li {
+    margin: 0 !important;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+    /* line 11, static/css/style.scss */
+    .gray-border li a {
+      transition: .2s; }
+      /* line 12, static/css/style.scss */
+      .gray-border li a:hover {
+        transform: translateX(5px); }
+  /* line 18, static/css/style.scss */
+  .gray-border li:not(:last-child) {
+    border-bottom: 0.3px solid rgba(105, 100, 105, 0.2); }
+
+/* line 24, static/css/style.scss */
+.container-content .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  /* line 25, static/css/style.scss */
+  .container-content .title-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+/* line 36, static/css/style.scss */
+.tasks-container {
+  margin-top: 40px; }
+  /* line 38, static/css/style.scss */
+  .tasks-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    /* line 42, static/css/style.scss */
+    .tasks-container ul li {
+      margin: 30px 0;
+      border-bottom: 1px solid rgba(105, 100, 105, 0.2); }
+    /* line 46, static/css/style.scss */
+    .tasks-container ul .task-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px; }
+      /* line 52, static/css/style.scss */
+      .tasks-container ul .task-item .first-column {
+        width: 75%;
+        height: 100%; }
+        /* line 55, static/css/style.scss */
+        .tasks-container ul .task-item .first-column div {
+          margin-bottom: 15px; }
+        /* line 58, static/css/style.scss */
+        .tasks-container ul .task-item .first-column .title {
+          font-size: large;
+          font-weight: 800; }
+          /* line 61, static/css/style.scss */
+          .tasks-container ul .task-item .first-column .title .not-done {
+            color: red; }
+          /* line 64, static/css/style.scss */
+          .tasks-container ul .task-item .first-column .title .done {
+            color: green; }
+        /* line 68, static/css/style.scss */
+        .tasks-container ul .task-item .first-column .date {
+          font-size: small;
+          font-weight: 400; }
+        /* line 72, static/css/style.scss */
+        .tasks-container ul .task-item .first-column .tags {
+          margin-bottom: 15px;
+          color: gray; }
+          /* line 75, static/css/style.scss */
+          .tasks-container ul .task-item .first-column .tags a {
+            text-decoration: None; }
+      /* line 80, static/css/style.scss */
+      .tasks-container ul .task-item .second-column {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: end; }
+
+/* line 91, static/css/style.scss */
+.tags-table th {
+  font-size: large; }
+
+/* line 96, static/css/style.scss */
+.tag-title-container {
+  border-bottom: 1px solid rgba(105, 100, 105, 0.2); }
+
+/* line 101, static/css/style.scss */
+.tag-table-row td {
+  margin-top: 100px; }

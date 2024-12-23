@@ -1,0 +1,13 @@
+{% extends 'tasks/base.html' %}
+
+{% block title %}{{ form.instance.id|yesno:"Update Tag,Add Tag" }}{% endblock %}
+
+{% block content %}
+<h1>{{ form.instance.id|yesno:"Update Tag,Add Tag" }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-success">Save</button>
+    <a class="btn btn-secondary" href="{% url 'tag_list' %}">Cancel</a>
+</form>
+{% endblock %}

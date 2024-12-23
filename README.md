@@ -52,3 +52,58 @@ A tag list page should look like this:
 ![](https://mate-academy-images.s3.eu-central-1.amazonaws.com/python_exam_second_scr_1c4563cb17.png)
 
 **Everybody should be able to easily clone and run your project!**
+
+
+
+
+###############################################
+
+
+Views
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import Task, Tag
+from .forms import TaskForm
+
+
+def task_list(request):
+    tasks = Task.objects.order_by('is_done', '-created_at')
+    return render(request, 'tasks/task_list.html', {'tasks': tasks})
+
+def tag_list(request):
+    tags = Tag.objects.all()
+    return render(request, 'tasks/tag_list.html', {'tags': tags})
+
+def add_task(request):
+    if request.method == 'POST':
+        form = TaskForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = TaskForm()
+    return render(request, 'tasks/add_task.html', {'form': form})
+
+def edit_task(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    if request.method == 'POST':
+        form = TaskForm(request.POST, instance=task)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = TaskForm(instance=task)
+    return render(request, 'tasks/edit_task.html', {'form': form})
+
+def delete_task(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    task.delete()
+    return redirect('home')
+
+def toggle_task_status(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    task.is_done = not task.is_done
+    task.save()
+    return redirect('home')
+
+
+Eu já tenho pronto a estrutura do back preciso criar os templates 

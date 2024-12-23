@@ -1,0 +1,75 @@
+/* line 2, static/css/style.scss */
+.gray-border {
+  border: 0.3px solid rgba(105, 100, 105, 0.2);
+  border-radius: 3.5px; }
+  /* line 5, static/css/style.scss */
+  .gray-border li {
+    margin: 0 !important;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+  /* line 12, static/css/style.scss */
+  .gray-border li:not(:last-child) {
+    border-bottom: 0.3px solid rgba(105, 100, 105, 0.2); }
+
+/* line 18, static/css/style.scss */
+.container-content .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  /* line 19, static/css/style.scss */
+  .container-content .title-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+/* line 31, static/css/style.scss */
+.tasks-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  /* line 35, static/css/style.scss */
+  .tasks-container ul li:not(:last-child) {
+    border-bottom: 0.3px solid rgba(105, 100, 105, 0.2); }
+  /* line 38, static/css/style.scss */
+  .tasks-container ul .task-item {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px; }
+    /* line 45, static/css/style.scss */
+    .tasks-container ul .task-item .first-column {
+      border: 2px solid blue;
+      width: 75%;
+      height: 100%; }
+      /* line 49, static/css/style.scss */
+      .tasks-container ul .task-item .first-column div {
+        margin-bottom: 10px; }
+      /* line 52, static/css/style.scss */
+      .tasks-container ul .task-item .first-column .title {
+        font-size: large;
+        font-weight: 800; }
+        /* line 55, static/css/style.scss */
+        .tasks-container ul .task-item .first-column .title .not-done {
+          color: red; }
+        /* line 58, static/css/style.scss */
+        .tasks-container ul .task-item .first-column .title .done {
+          color: green; }
+      /* line 62, static/css/style.scss */
+      .tasks-container ul .task-item .first-column .date {
+        font-size: small;
+        font-weight: 400; }
+      /* line 66, static/css/style.scss */
+      .tasks-container ul .task-item .first-column .tags {
+        color: gray; }
+    /* line 70, static/css/style.scss */
+    .tasks-container ul .task-item .second-column {
+      border: 2px solid green;
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: end;
+      align-items: center; }

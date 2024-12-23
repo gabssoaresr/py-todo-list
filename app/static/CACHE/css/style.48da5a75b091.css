@@ -1,0 +1,30 @@
+/* line 2, static/css/style.scss */
+.gray-border {
+  border: 0.3px solid rgba(105, 100, 105, 0.2);
+  border-radius: 3.5px; }
+  /* line 5, static/css/style.scss */
+  .gray-border li {
+    margin: 0 !important;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+  /* line 12, static/css/style.scss */
+  .gray-border li:not(:last-child) {
+    border-bottom: 0.3px solid rgba(105, 100, 105, 0.2); }
+
+/* line 18, static/css/style.scss */
+.container-content .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  /* line 19, static/css/style.scss */
+  .container-content .title-container div {
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+/* line 33, static/css/style.scss */
+.tasks-container ul li {
+  border: 2px solid red; }
